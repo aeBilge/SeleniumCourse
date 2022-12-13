@@ -8,11 +8,20 @@
 
     <h3> Registration Form </h3>
 
-    <form>
+    <!-- "<form> tag" = used to create an HTML form for user input. -->
+    <form action="Success.html">
 
+      <!-- "<input> tag" = specifies input field where the user can enter data. -->
       <label> Name: <input id="nameInput" type="text"></label>
       <br>
       <label> Age: <input id="ageInput" type="number"> </label>
+      <br>
+
+      <label for="dateInput"> Date: </label>
+      <input id="dateInput" type="date">
+      <br>
+
+      <input type="submit">
 
     </form>
 
