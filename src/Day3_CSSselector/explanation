@@ -21,8 +21,25 @@ input[class='inputtext'] --> this is going to look for all <input> tags,
                              attribute should be equal to 'inputtext'
 
 example:
-h1 + p            siblings (all a tags that follow a b tag or are placed right after)
-h1 ~ img          siblings (all the tags that are siblings of a tag)
-img ~ img         siblings (all the tags that are equal to this are consisted)
-#profile > im     children (find direct children of parent)
-#profile (space) img   grandchildren (find direct grandchildren of parent)
+h1 + p                  siblings (all a tags that follow a b tag or are placed right after)
+h1 ~ img                siblings (all the tags that are siblings of a tag)
+img ~ img               siblings (all the tags that are equal to this are consisted)
+#profile > im           children (find direct children of parent)
+#profile (space) img    grandchildren (find direct grandchildren of parent)
+
+...:not(...) will avoid the element in the brackets
+example:
+<intput type="text" class="required" />
+<intput type="text" class="required" />
+<intput type="text">
+<intput type="radio">
+<intput type="email">
+
+1. input:not(.required)         ==> first 2 lines will be avoided
+2. input:not([type=email])      ==> last line will be avoided
+
+(ex: id) > (ex: tag):nth-child(ex: 2)  will select the first child with the element and tag
+that has been put in the brackets, will start from top and can be NULL as well.
+
+(ex: id) > (ex: tag):nth-last-child(ex: 2)  will select the last child with the element and
+tag that has been put in the brackets, will start from bottom and can be NULL as well.
