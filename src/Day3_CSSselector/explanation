@@ -1,0 +1,21 @@
+example:
+<input type="text" class="inputtext _58mg _5dba _2ph-"
+data-type="text" name="firstname" value="" aria-required="true"
+placeholder="First name" aria-label="First name" id="u_3_b_cW" tabindex="0">
+
+
+CSS Locator with ID ->              #u_3_b_cW
+CSS Locator with class ->           .inputtext _58mg _5dba _2ph-
+CSS Locator with attribute ->       input[placeholder=‘First name’]
+CSS Locator with attribute ->       input[name=‘firstname’]
+CSS Locator with attribute ->       input[id=‘u_3_b_cW’]
+
+# --> is used for IDs
+. --> is used for Classes
+input[class*=form] --> the '*' is used for checking if it contains ...
+input[class^=form] --> the '^' is used for to see if it starts with ...
+input[class$=form] --> the '$' is used for to see if it ends with ...
+
+input[class='inputtext'] --> this is going to look for all <input> tags,
+                             with "class" attribute in it and the "class"
+                             attribute should be equal to 'inputtext'
