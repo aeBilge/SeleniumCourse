@@ -11,15 +11,18 @@
     <form action="FormSubmission.html">
 
       <label> Name: <input id="nameInput" type="text"></label> <br>
-
+        <!-- Here we simply use the "<date> tag". -->
       <label> Date of Birth: <input id="dateBirth" type="date"></label> <br>
 
       <label> Phone number: <input id="phoneNumber" type="number"></label> <br>
-
+        <!-- Here we use the radio type button, normally when selected you cant unselect.
+        but we got multiple of the same name with different id, so the other gets unchecked.-->
       <label> Male: <input id="radioButton1" name="gender" type="radio"></label> <br>
       <label> Female: <input id="radioButton2" name="gender" type="radio"></label> <br>
 
         <label for="countryDropdown"> Country: </label>
+        <!-- Here we use the "<select> tag", you can use this to choose between options.
+        it is similar to a checkbox but when something is selected the list becomes hidden. -->
         <select id="countryDropdown" name="countries">
 
             <option value="USA"> United States </option>
@@ -29,12 +32,15 @@
 
         </select> <br>
 
+        <!-- Here we use a textarea, so we can just write stuff down, like a
+        description for instance. -->
       <label> Description: <textarea id="descriptionInput" rows="20" cols="40"></textarea></label> <br>
 
+        <!-- Here we use a checkbox, you can check it and uncheck it. -->
       <label> Agree? <input id="agreeCheckbox" type="checkbox"></label> <br>
 
       <input type="submit"> <br> <br>
-
+        <!-- Here we put a picture in as well. You can also add attributes. -->
         <img src="HTML.jpg" width="600">
 
     </form>
