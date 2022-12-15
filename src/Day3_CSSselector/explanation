@@ -19,3 +19,10 @@ input[class$=form] --> the '$' is used for to see if it ends with ...
 input[class='inputtext'] --> this is going to look for all <input> tags,
                              with "class" attribute in it and the "class"
                              attribute should be equal to 'inputtext'
+
+example:
+h1 + p            siblings (all a tags that follow a b tag or are placed right after)
+h1 ~ img          siblings (all the tags that are siblings of a tag)
+img ~ img         siblings (all the tags that are equal to this are consisted)
+#profile > im     children (find direct children of parent)
+#profile (space) img   grandchildren (find direct grandchildren of parent)
