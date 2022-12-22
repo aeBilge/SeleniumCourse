@@ -27,7 +27,6 @@ img ~ img               siblings (all the tags that are equal to this are consis
 #profile > im           children (find direct children of parent)
 #profile (space) img    grandchildren (find direct grandchildren of parent)
 
-...:not(...) will avoid the element in the brackets
 example:
 <intput type="text" class="required" />
 <intput type="text" class="required" />
@@ -35,6 +34,7 @@ example:
 <intput type="radio">
 <intput type="email">
 
+...:not(...) will avoid the element in the brackets
 1. input:not(.required)         ==> first 2 lines will be avoided
 2. input:not([type=email])      ==> last line will be avoided
 
